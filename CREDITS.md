@@ -7,7 +7,6 @@ All images from Wikimedia Commons; licenses verified on each file page (Oct 15, 
 | images/warehouse-pallet-racks.jpg (hero) | https://commons.wikimedia.org/wiki/File:Modern_warehouse_with_pallet_rack_storage_system.jpg | Axisadman | CC BY-SA 3.0 |
 | images/case-erector.jpg | https://commons.wikimedia.org/wiki/File:High_Speed_Case_Erector.jpg | Killgore1138 | CC BY-SA 4.0 |
 | images/robotic-case-packer.jpg | https://commons.wikimedia.org/wiki/File:Delkor_Systems_Robotic_Case_Packer.jpg | Delkorpackaging | CC BY-SA 4.0 |
-| images/carton-machine.jpg | https://commons.wikimedia.org/wiki/File:Carton_Machine._This_machine_folds,_glues,_fills,_weighs_and_seals_30_2_lb._or_5_lb._cartons_per_minute_with_one_operative_LCCN2016824510.jpg | National Photo Company Collection (Library of Congress) | Public domain, no known restrictions |
 | images/robotic-palletizer.jpg | https://commons.wikimedia.org/wiki/File:Automatic_Palletizer_Robot.jpg | Killgore1138 | CC0 1.0 |
 | images/corrugated-on-conveyor.jpg | https://commons.wikimedia.org/wiki/File:Corrugated_cardboard_on_conveyor.jpg | Streetsoda | CC0 1.0 |
 | images/stacked-pallets.jpg | https://commons.wikimedia.org/wiki/File:Wooden-pallets_stacked_8.jpg | W.carter | CC0 1.0 |

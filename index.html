@@ -16,6 +16,8 @@ nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}nav ul a{color:v
 .btn.alt{background:transparent;border:2px solid #fff}
 section{padding:70px 0}section.alt{background:var(--light)}h2{color:var(--navy);font-size:2rem;margin:0 0 12px}
 .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:28px}
+#services .grid{display:flex;flex-wrap:wrap;justify-content:center}#services .card{flex:0 1 calc(33.333% - 14px);min-width:240px}
+@media(max-width:600px){#services .card{flex-basis:100%}}
 .card{background:#fff;border:1px solid #e3e8ea;border-radius:12px;padding:24px}.card h3{margin:0 0 8px;color:var(--navy)}
 .num{display:inline-block;width:36px;height:36px;border-radius:50%;background:var(--teal);color:#fff;text-align:center;line-height:36px;font-weight:700;margin-bottom:10px}
 .price{background:var(--navy);color:#fff;border-radius:14px;padding:30px;margin-top:30px;text-align:center}
@@ -31,7 +33,7 @@ ul.check{padding-left:0;list-style:none}ul.check li{padding-left:28px;position:r
 footer a{color:#9fd8cd}.credits{max-width:900px;margin:14px auto 0;font-size:.78rem;opacity:.85;line-height:1.5}
 </style></head><body>
 <nav><div class="wrap"><a class="logo" href="#">Telli <span>Packaging Consulting</span></a>
-<ul><li><a href="#how">How it works</a></li><li><a href="#services">Services</a></li><li><a href="#floor">Equipment</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<ul><li><a href="#how">How it works</a></li><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
 <header class="hero"><div class="wrap">
 <h1>Packaging expertise for growing brands. You only pay if I save you money.</h1>
 <p>Telli Packaging Consulting helps small food, beverage, and CPG brands that don't have a packaging engineer on staff. Nothing up front. My fee is 10% of the savings I find, and if I don't find savings, you pay $0.</p>
@@ -53,16 +55,6 @@ footer a{color:#9fd8cd}.credits{max-width:900px;margin:14px auto 0;font-size:.78
 <div class="card img"><img src="images/stacked-pallets.jpg" alt="Close-up of stacked wooden shipping pallets" loading="lazy"><div class="body"><h3>Less shipping damage</h3><p>Cut breakage, leaks, and returns with better pack-out and secondary packaging.</p></div></div>
 <div class="card img"><img src="images/robotic-case-packer.jpg" alt="Robotic arm with vacuum gripper inside a case packing machine" loading="lazy"><div class="body"><h3>Retail-ready packs</h3><p>Shelf-ready and case-ready packaging that buyers and store teams like working with.</p></div></div>
 <div class="card img"><img src="images/robotic-palletizer.jpg" alt="Industrial robot palletizing cases at the end of a packaging line" loading="lazy"><div class="body"><h3>Landed-cost reduction</h3><p>Look at the full picture: materials, freight, cube, and handling, to lower cost per unit delivered.</p></div></div>
-</div></div></section>
-<section id="floor"><div class="wrap"><h2>From the plant floor</h2><p>Cases, cartons, case erectors, cartoners, packaging lines, and palletizers. This is the equipment and material behind every package you ship, and where the savings usually hide.</p>
-<div class="gallery">
-<figure><img src="images/case-erector.jpg" alt="Automatic case erector that forms corrugated cases from flat blanks" loading="lazy"><figcaption>Case erector</figcaption></figure>
-<figure><img src="images/carton-machine.jpg" alt="Historic carton machine line that folds, glues, fills, weighs, and seals cartons" loading="lazy"><figcaption>Cartoner</figcaption></figure>
-<figure><img src="images/food-production-line.jpg" alt="Modern food production line with stainless steel conveyors" loading="lazy"><figcaption>Food packaging line</figcaption></figure>
-<figure><img src="images/robotic-case-packer.jpg" alt="Robotic case packer with a vacuum end-of-arm tool" loading="lazy"><figcaption>Case packer</figcaption></figure>
-<figure><img src="images/robotic-palletizer.jpg" alt="Robotic palletizer stacking cases onto a pallet" loading="lazy"><figcaption>Palletizer</figcaption></figure>
-<figure><img src="images/corrugated-on-conveyor.jpg" alt="Corrugated board on a conveyor in a packaging plant" loading="lazy"><figcaption>Corrugated cases</figcaption></figure>
-<figure><img src="images/stacked-pallets.jpg" alt="Stacked wooden pallets ready for shipping" loading="lazy"><figcaption>Pallets</figcaption></figure>
 </div></div></section>
 <section id="about" class="alt"><div class="wrap about"><div><h2>About Joe</h2>
 <p>I'm Joe Critelli, a Clemson University Packaging Science grad. I've spent about 8 years in CPG packaging at Mars, Kellanova (Kellogg's), and Home Market Foods, plus about 15 years in restaurants, so I know food and beverage from the kitchen to the shelf.</p>
@@ -88,7 +80,6 @@ footer a{color:#9fd8cd}.credits{max-width:900px;margin:14px auto 0;font-size:.78
 Warehouse with pallet racks by Axisadman, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> (<a href="https://commons.wikimedia.org/wiki/File:Modern_warehouse_with_pallet_rack_storage_system.jpg">source</a>).
 High Speed Case Erector by Killgore1138, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> (<a href="https://commons.wikimedia.org/wiki/File:High_Speed_Case_Erector.jpg">source</a>).
 Robotic Case Packer by Delkorpackaging, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, cropped and resized (<a href="https://commons.wikimedia.org/wiki/File:Delkor_Systems_Robotic_Case_Packer.jpg">source</a>).
-Carton Machine, National Photo Company Collection, Library of Congress, public domain.
 Palletizer robot by Killgore1138, corrugated on conveyor by Streetsoda, stacked pallets by W.carter, food production line by LANENWM Meso Amermbalin, all CC0.
 Images resized for the web.</div></footer>
 </body></html>
