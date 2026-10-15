@@ -10,8 +10,8 @@ nav{background:#fff;border-bottom:1px solid #e3e8ea;position:sticky;top:0;z-inde
 .logo{font-weight:800;color:var(--navy);font-size:1.15rem;text-decoration:none}.logo span{color:var(--teal)}
 nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}nav ul a{color:var(--navy);text-decoration:none;font-size:.95rem}
 @media(max-width:720px){nav ul{display:none}}
-.hero{background:linear-gradient(135deg,var(--navy),#1d5470);color:#fff;padding:90px 0 80px}
-.hero h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.15;margin:0 0 18px}.hero p{font-size:1.15rem;max-width:640px;opacity:.93}
+.hero{position:relative;color:#fff;padding:110px 0 100px;background:linear-gradient(rgba(10,30,45,.80),rgba(10,30,45,.72)),url("images/warehouse-pallet-racks.jpg") center/cover no-repeat}
+.hero h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.15;margin:0 0 18px;text-shadow:0 2px 12px rgba(0,0,0,.4)}.hero p{font-size:1.15rem;max-width:640px;opacity:.95}
 .btn{display:inline-block;background:var(--teal);color:#fff;padding:14px 24px;border-radius:8px;text-decoration:none;font-weight:700;margin:8px 10px 0 0}
 .btn.alt{background:transparent;border:2px solid #fff}
 section{padding:70px 0}section.alt{background:var(--light)}h2{color:var(--navy);font-size:2rem;margin:0 0 12px}
@@ -21,10 +21,17 @@ section{padding:70px 0}section.alt{background:var(--light)}h2{color:var(--navy);
 .price{background:var(--navy);color:#fff;border-radius:14px;padding:30px;margin-top:30px;text-align:center}
 .price strong{font-size:1.6rem;display:block;margin-bottom:6px}
 ul.check{padding-left:0;list-style:none}ul.check li{padding-left:28px;position:relative;margin:8px 0}ul.check li:before{content:"\2713";position:absolute;left:0;color:var(--teal);font-weight:800}
-.contact{text-align:center}footer{background:var(--navy);color:#cfd9df;text-align:center;padding:24px;font-size:.9rem}
+.card.img{padding:0;overflow:hidden}.card.img img{width:100%;height:170px;object-fit:cover;display:block}.card.img .body{padding:20px 22px 22px}
+.gallery{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:28px}
+.gallery figure{margin:0;position:relative;border-radius:12px;overflow:hidden;background:#000}.gallery img{width:100%;height:220px;object-fit:cover;display:block;transition:transform .4s}
+.gallery figure:hover img{transform:scale(1.05)}.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;color:#fff;font-weight:700;background:linear-gradient(transparent,rgba(0,0,0,.75))}
+.about{display:grid;gap:36px;grid-template-columns:1.2fr 1fr;align-items:center}.about img{width:100%;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+@media(max-width:780px){.about{grid-template-columns:1fr}.hero{padding:80px 0 70px}section{padding:54px 0}}
+.contact{text-align:center}footer{background:var(--navy);color:#cfd9df;text-align:center;padding:28px 20px;font-size:.9rem}
+footer a{color:#9fd8cd}.credits{max-width:900px;margin:14px auto 0;font-size:.78rem;opacity:.85;line-height:1.5}
 </style></head><body>
 <nav><div class="wrap"><a class="logo" href="#">Telli <span>Packaging Consulting</span></a>
-<ul><li><a href="#how">How it works</a></li><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<ul><li><a href="#how">How it works</a></li><li><a href="#services">Services</a></li><li><a href="#floor">Equipment</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
 <header class="hero"><div class="wrap">
 <h1>Packaging expertise for growing brands. You only pay if I save you money.</h1>
 <p>Telli Packaging Consulting helps small food, beverage, and CPG brands that don't have a packaging engineer on staff. Nothing up front. My fee is 10% of the savings I find, and if I don't find savings, you pay $0.</p>
@@ -41,29 +48,47 @@ ul.check{padding-left:0;list-style:none}ul.check li{padding-left:28px;position:r
 </div></section>
 <section id="services" class="alt"><div class="wrap"><h2>Services</h2>
 <div class="grid">
-<div class="card"><h3>Smarter materials and structures</h3><p>Right-size films, pouches, cartons, and cases so you stop paying for more package than you need.</p></div>
-<div class="card"><h3>Supplier and pricing review</h3><p>Benchmark your quotes and specs, and find better pricing or better-fit suppliers.</p></div>
-<div class="card"><h3>Less shipping damage</h3><p>Cut breakage, leaks, and returns with better pack-out and secondary packaging.</p></div>
-<div class="card"><h3>Retail-ready packs</h3><p>Shelf-ready and case-ready packaging that buyers and store teams like working with.</p></div>
-<div class="card"><h3>Landed-cost reduction</h3><p>Look at the full picture: materials, freight, cube, and handling, to lower cost per unit delivered.</p></div>
+<div class="card img"><img src="images/corrugated-on-conveyor.jpg" alt="Flat corrugated board moving down a conveyor" loading="lazy"><div class="body"><h3>Smarter materials and structures</h3><p>Right-size films, pouches, cartons, and cases so you stop paying for more package than you need.</p></div></div>
+<div class="card img"><img src="images/case-erector.jpg" alt="High speed automatic case erector machine with labeled carton magazine and forming section" loading="lazy"><div class="body"><h3>Supplier and pricing review</h3><p>Benchmark your quotes and specs, and find better pricing or better-fit suppliers.</p></div></div>
+<div class="card img"><img src="images/stacked-pallets.jpg" alt="Close-up of stacked wooden shipping pallets" loading="lazy"><div class="body"><h3>Less shipping damage</h3><p>Cut breakage, leaks, and returns with better pack-out and secondary packaging.</p></div></div>
+<div class="card img"><img src="images/robotic-case-packer.jpg" alt="Robotic arm with vacuum gripper inside a case packing machine" loading="lazy"><div class="body"><h3>Retail-ready packs</h3><p>Shelf-ready and case-ready packaging that buyers and store teams like working with.</p></div></div>
+<div class="card img"><img src="images/robotic-palletizer.jpg" alt="Industrial robot palletizing cases at the end of a packaging line" loading="lazy"><div class="body"><h3>Landed-cost reduction</h3><p>Look at the full picture: materials, freight, cube, and handling, to lower cost per unit delivered.</p></div></div>
 </div></div></section>
-<section id="about"><div class="wrap"><h2>About Joe</h2>
+<section id="floor"><div class="wrap"><h2>From the plant floor</h2><p>Cases, cartons, case erectors, cartoners, packaging lines, and palletizers. This is the equipment and material behind every package you ship, and where the savings usually hide.</p>
+<div class="gallery">
+<figure><img src="images/case-erector.jpg" alt="Automatic case erector that forms corrugated cases from flat blanks" loading="lazy"><figcaption>Case erector</figcaption></figure>
+<figure><img src="images/carton-machine.jpg" alt="Historic carton machine line that folds, glues, fills, weighs, and seals cartons" loading="lazy"><figcaption>Cartoner</figcaption></figure>
+<figure><img src="images/food-production-line.jpg" alt="Modern food production line with stainless steel conveyors" loading="lazy"><figcaption>Food packaging line</figcaption></figure>
+<figure><img src="images/robotic-case-packer.jpg" alt="Robotic case packer with a vacuum end-of-arm tool" loading="lazy"><figcaption>Case packer</figcaption></figure>
+<figure><img src="images/robotic-palletizer.jpg" alt="Robotic palletizer stacking cases onto a pallet" loading="lazy"><figcaption>Palletizer</figcaption></figure>
+<figure><img src="images/corrugated-on-conveyor.jpg" alt="Corrugated board on a conveyor in a packaging plant" loading="lazy"><figcaption>Corrugated cases</figcaption></figure>
+<figure><img src="images/stacked-pallets.jpg" alt="Stacked wooden pallets ready for shipping" loading="lazy"><figcaption>Pallets</figcaption></figure>
+</div></div></section>
+<section id="about" class="alt"><div class="wrap about"><div><h2>About Joe</h2>
 <p>I'm Joe Critelli, a Clemson University Packaging Science grad. I've spent about 8 years in CPG packaging at Mars, Kellanova (Kellogg's), and Home Market Foods, plus about 15 years in restaurants, so I know food and beverage from the kitchen to the shelf.</p>
-<p>I started Telli Packaging Consulting to give growing brands the same packaging expertise the big companies have, without the cost of a full-time hire. Based in Massachusetts, serving New England and the East Coast.</p>
+<p>I started Telli Packaging Consulting to give growing brands the same packaging expertise the big companies have, without the cost of a full-time hire. Based in Massachusetts, serving New England and the East Coast.</p></div>
+<img src="images/food-production-line.jpg" alt="Food production line with conveyors in a modern plant" loading="lazy">
 </div></section>
-<section id="who" class="alt"><div class="wrap"><h2>Who it's for</h2>
+<section id="who"><div class="wrap"><h2>Who it's for</h2>
 <ul class="check">
 <li>Small and growing food, beverage, and CPG brands</li>
 <li>Teams without a packaging engineer or packaging department</li>
 <li>Brands launching new packaging, scaling into retail, or facing rising packaging costs</li>
 <li>Companies in New England and across the East Coast</li>
 </ul></div></section>
-<section id="contact" class="contact"><div class="wrap"><h2>Let's take a look at what you're shipping</h2>
+<section id="contact" class="contact alt"><div class="wrap"><h2>Let's take a look at what you're shipping</h2>
 <p>Start with a free 15-minute review, by email or a call. Whatever works best for you.</p>
 <p><strong>Joe Critelli</strong><br>Telli Packaging Consulting<br>
 <a href="tel:+15084880397">508-488-0397</a><br><a href="mailto:jpcritelli96@gmail.com">jpcritelli96@gmail.com</a></p>
 <a class="btn" href="mailto:jpcritelli96@gmail.com?subject=Free%2015-minute%20packaging%20review">Email Joe</a>
 <a class="btn" href="tel:+15084880397">Call Joe</a>
 </div></section>
-<footer>&copy; 2026 Telli Packaging Consulting &middot; Massachusetts</footer>
+<footer>&copy; 2026 Telli Packaging Consulting &middot; Massachusetts
+<div class="credits"><strong>Image credits (Wikimedia Commons):</strong>
+Warehouse with pallet racks by Axisadman, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> (<a href="https://commons.wikimedia.org/wiki/File:Modern_warehouse_with_pallet_rack_storage_system.jpg">source</a>).
+High Speed Case Erector by Killgore1138, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> (<a href="https://commons.wikimedia.org/wiki/File:High_Speed_Case_Erector.jpg">source</a>).
+Robotic Case Packer by Delkorpackaging, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, cropped and resized (<a href="https://commons.wikimedia.org/wiki/File:Delkor_Systems_Robotic_Case_Packer.jpg">source</a>).
+Carton Machine, National Photo Company Collection, Library of Congress, public domain.
+Palletizer robot by Killgore1138, corrugated on conveyor by Streetsoda, stacked pallets by W.carter, food production line by LANENWM Meso Amermbalin, all CC0.
+Images resized for the web.</div></footer>
 </body></html>
